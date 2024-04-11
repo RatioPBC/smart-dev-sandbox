@@ -3,45 +3,45 @@ version: '2.2'
 # We create one volume for each supported FHIR version. These volumes will
 # contain and persist the H2 database file
 volumes:
-  r2-database:
-  r3-database:
+  # r2-database:
+  # r3-database:
   r4-database:
 
 services:
 
-  r2: # ------------------------------------------------------------------------
-    container_name: hapi-r2
-    image: $R2_IMAGE
-    environment:
-      PORT: $R2_PORT
-    ports:
-      - $R2_PORT:8080
-    volumes:
-      - "r2-database:/usr/local/tomcat/target/database"
-    command: ["sh", "-c", "
-      envsubst < /tmp/hapi.properties.tpl > /config/hapi.properties &&
-      envsubst < /tmp/server.xml > /usr/local/tomcat/conf/server.xml &&
-      catalina.sh run"]
-    cpu_count: $R2_CPU_CORES
-    mem_limit: $R2_MEMORY
-    scale    : $R2_ENABLED
+  # r2: # ------------------------------------------------------------------------
+  #   container_name: hapi-r2
+  #   image: $R2_IMAGE
+  #   environment:
+  #     PORT: $R2_PORT
+  #   ports:
+  #     - $R2_PORT:8080
+  #   volumes:
+  #     - "r2-database:/usr/local/tomcat/target/database"
+  #   command: ["sh", "-c", "
+  #     envsubst < /tmp/hapi.properties.tpl > /config/hapi.properties &&
+  #     envsubst < /tmp/server.xml > /usr/local/tomcat/conf/server.xml &&
+  #     catalina.sh run"]
+  #   cpu_count: $R2_CPU_CORES
+  #   mem_limit: $R2_MEMORY
+  #   scale    : $R2_ENABLED
 
-  r3: # ------------------------------------------------------------------------
-    container_name: hapi-r3
-    image: $R3_IMAGE
-    environment:
-      PORT: $R3_PORT
-    ports:
-      - $R3_PORT:8080
-    volumes:
-      - "r3-database:/usr/local/tomcat/target/database"
-    command: ["sh", "-c", "
-      envsubst < /tmp/hapi.properties.tpl > /config/hapi.properties &&
-      envsubst < /tmp/server.xml > /usr/local/tomcat/conf/server.xml &&
-      catalina.sh run"]
-    cpu_count: $R3_CPU_CORES
-    mem_limit: $R3_MEMORY
-    scale: $R3_ENABLED
+  # r3: # ------------------------------------------------------------------------
+  #   container_name: hapi-r3
+  #   image: $R3_IMAGE
+  #   environment:
+  #     PORT: $R3_PORT
+  #   ports:
+  #     - $R3_PORT:8080
+  #   volumes:
+  #     - "r3-database:/usr/local/tomcat/target/database"
+  #   command: ["sh", "-c", "
+  #     envsubst < /tmp/hapi.properties.tpl > /config/hapi.properties &&
+  #     envsubst < /tmp/server.xml > /usr/local/tomcat/conf/server.xml &&
+  #     catalina.sh run"]
+  #   cpu_count: $R3_CPU_CORES
+  #   mem_limit: $R3_MEMORY
+  #   scale: $R3_ENABLED
 
   r4: # ------------------------------------------------------------------------
     container_name: hapi-r4
