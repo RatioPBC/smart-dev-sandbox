@@ -115,7 +115,7 @@ services:
 
   smart-launcher: # ------------------------------------------------------------
     container_name: launcher
-    image: smartonfhir/smart-launcher:latest
+    image: smartonfhir/smart-launcher-2:latest
     environment:
       HOST                   : "${HOST}"
       NODE_ENV               : "production"
