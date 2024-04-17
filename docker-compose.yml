@@ -48,7 +48,7 @@ services:
     image: $R4_IMAGE
     environment:
       PORT: $R4_PORT
-      HOST: $HOST
+      HOST: "${HOST}"
     ports:
       - $R4_PORT:8080
     # volumes:
@@ -117,21 +117,21 @@ services:
     container_name: launcher
     image: smartonfhir/smart-launcher-2:latest
     environment:
-      HOST                   : "${HOST}"
+      # HOST                   : "${HOST}"
       NODE_ENV               : "production"
-      LAUNCHER_BASE_URL      : "http://${HOST}:${LAUNCHER_PORT}"
-      BASE_URL               : "http://${HOST}:${LAUNCHER_PORT}"
+      # LAUNCHER_BASE_URL      : "http://${HOST}:${LAUNCHER_PORT}"
+      # BASE_URL               : "http://${HOST}:${LAUNCHER_PORT}"
       FHIR_SERVER_R2         : "http://${HOST}:${R2_PORT}/hapi-fhir-jpaserver/fhir"
       FHIR_SERVER_R3         : "http://${HOST}:${R3_PORT}/hapi-fhir-jpaserver/fhir"
       FHIR_SERVER_R4         : "http://${HOST}:${R4_PORT}/hapi-fhir-jpaserver/fhir"
-      FHIR_SERVER_R2_INTERNAL: "http://r2:8080/hapi-fhir-jpaserver/fhir"
-      FHIR_SERVER_R3_INTERNAL: "http://r3:8080/hapi-fhir-jpaserver/fhir"
-      FHIR_SERVER_R4_INTERNAL: "http://r4:8080/hapi-fhir-jpaserver/fhir"
-      DISABLE_SANDBOXES      : "1"
-      CDS_SANDBOX_URL        : "https://sandbox.cds-hooks.org"
-      PICKER_CONFIG_R2       : "r2-local"
-      PICKER_CONFIG_R3       : "r3-local"
-      PICKER_CONFIG_R4       : "r4-local"
+      # FHIR_SERVER_R2_INTERNAL: "http://r2:8080/hapi-fhir-jpaserver/fhir"
+      # FHIR_SERVER_R3_INTERNAL: "http://r3:8080/hapi-fhir-jpaserver/fhir"
+      # FHIR_SERVER_R4_INTERNAL: "http://r4:8080/hapi-fhir-jpaserver/fhir"
+      # DISABLE_SANDBOXES      : "1"
+      # CDS_SANDBOX_URL        : "https://sandbox.cds-hooks.org"
+      # PICKER_CONFIG_R2       : "r2-local"
+      # PICKER_CONFIG_R3       : "r3-local"
+      # PICKER_CONFIG_R4       : "r4-local"
       PICKER_ORIGIN          : "http://${HOST}:${PATIENT_BROWSER_PORT}"
       STU2_ENABLED           : "${R2_ENABLED}"
       STU3_ENABLED           : "${R3_ENABLED}"
