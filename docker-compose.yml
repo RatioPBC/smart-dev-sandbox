@@ -2,10 +2,10 @@ version: '2.2'
 
 # We create one volume for each supported FHIR version. These volumes will
 # contain and persist the H2 database file
-# volumes:
-#   r2-database:
-#   r3-database:
-#   r4-database:
+volumes:
+#   r2-db:
+#   r3-db:
+  r4-db:
 
 services:
 
@@ -51,12 +51,12 @@ services:
       HOST: "${HOST}"
     ports:
       - $R4_PORT:8080
-    # volumes:
-    #   - "r4-database:/usr/local/tomcat/target/database:delegated"
-    # command: ["sh", "-c", "
-    #   envsubst < /tmp/hapi.properties.tpl > /config/hapi.properties &&
-    #   envsubst < /tmp/server.xml > /usr/local/tomcat/conf/server.xml &&
-    #   catalina.sh run"]
+    volumes:
+      - "r4-db:/usr/local/tomcat/target/database"
+    command: ["sh", "-c", "
+      envsubst < /tmp/hapi.properties.tpl > /config/hapi.properties &&
+      envsubst < /tmp/server.xml > /usr/local/tomcat/conf/server.xml &&
+      catalina.sh run"]
     cpu_count: $R4_CPU_CORES
     mem_limit: $R4_MEMORY
     scale: $R4_ENABLED
