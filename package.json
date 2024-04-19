@@ -1,0 +1,24 @@
+{
+  "name": "smart-dev-sandbox",
+  "version": "1.0.0",
+  "description": "Docker-based version of the SMART Sandbox that can be installed locally on your machine to facilitate offline development and the use of custom data sets",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "upload:r4-synthea": "node ./node_modules/tag-uploader -d ./hapi/R4/SYNTHEA -S http://localhost:4004/hapi-fhir-jpaserver/fhir/",
+    "upload:r4-custom": "node ./node_modules/tag-uploader -d ./hapi/R4/CUSTOM -S http://localhost:4004/hapi-fhir-jpaserver/fhir/",
+    "upload:r4": "node ./node_modules/tag-uploader -d ./hapi/R4 -S http://localhost:4004/hapi-fhir-jpaserver/fhir/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://romancow@github.com/romancow/smart-dev-sandbox.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/romancow/smart-dev-sandbox/issues"
+  },
+  "homepage": "https://github.com/romancow/smart-dev-sandbox#readme",
+  "dependencies": {
+    "tag-uploader": "github:smart-on-fhir/tag-uploader"
+  }
+}
