@@ -1,0 +1,448 @@
+{
+  "resourceType": "Bundle",
+  "type": "transaction",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:07e2c163-71f6-46f1-99d5-d43c1a002cf2",
+      "resource": {
+        "resourceType" : "Patient",
+        "id" : "07e2c163-71f6-46f1-99d5-d43c1a002cf2",
+        "meta" : {
+          "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\"><b>Amy V. Baxter </b> female, DoB: 1987-02-20 ( Medical Record Number/1032702\u00a0(use:\u00a0usual))</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Record is active\">Active:</td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Amy V. Shaw (Old)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li>ph: 555-555-5555(HOME)</li><li><a href=\"mailto:amy.shaw@example.com\">amy.shaw@example.com</a></li><li>49 MEADOW ST MOUNDS OK 74047 US (old)</li><li>183 MOUNTAIN VIEW ST MOUNDS OK 74048 US </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The Sex Extension is used to reflect the documentation of a person's sex. Systems choosing to record sources of information should use the [Provenance resource](basic-provenance.html#element-level-provenance).\n \nUSCDI includes a data element for sex, intended to support the exchange of a sex value that is not characterized as sex assigned at birth or birth sex. This Sex extension supports USCDI. Sex assigned at birth or birth sex can be recorded using the more specific [US Core Birth Sex Extension](StructureDefinition-us-core-birthsex.html).\nFuture versions of this extension may be informed by the content of the HL7 Cross Paradigm IG: Gender Harmony - Sex and Gender Representation, which may include additional guidance on its relationship to administrative gender ([Patient.gender](StructureDefinition-us-core-patient-definitions.html#Patient.gender)).\"><a href=\"StructureDefinition-us-core-sex.html\">US Core Sex Extension:</a></td><td colspan=\"3\"><ul><li>248152002</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories: - Hispanic or Latino - Not Hispanic or Latino.\">US Core Ethnicity Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2135-2\">CDC Race and Ethnicity</a> 2135-2: Hispanic or Latino</li><li>detailed: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2184-0\">CDC Race and Ethnicity</a> 2184-0: Dominican</li><li>detailed: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2148-5\">CDC Race and Ethnicity</a> 2148-5: Mexican</li><li>text: Hispanic or Latino</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"A code classifying the person's sex assigned at birth  as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9). After version 6.0.0, this extension is no longer a *USCDI Requirement*.\"><a href=\"StructureDefinition-us-core-birthsex.html\">US Core Birth Sex Extension:</a></td><td colspan=\"3\"><ul><li>F</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The race codes used to represent these concepts are based upon the [CDC Race and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html#3) which includes over 900 concepts for representing race and ethnicity of which 921 reference race.  The race concepts are grouped by and pre-mapped to the 5 OMB race categories:\n\n - American Indian or Alaska Native\n - Asian\n - Black or African American\n - Native Hawaiian or Other Pacific Islander\n - White.\">US Core Race Extension:</td><td colspan=\"3\"><ul><li>ombCategory: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2106-3\">CDC Race and Ethnicity</a> 2106-3: White</li><li>ombCategory: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-1002-5\">CDC Race and Ethnicity</a> 1002-5: American Indian or Alaska Native</li><li>ombCategory: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2028-9\">CDC Race and Ethnicity</a> 2028-9: Asian</li><li>detailed: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-1586-7\">CDC Race and Ethnicity</a> 1586-7: Shoshone</li><li>detailed: <a href=\"https://phinvads.cdc.gov/vads/ViewCodeSystem.action?id=2.16.840.1.113883.6.238#CDCREC-2036-2\">CDC Race and Ethnicity</a> 2036-2: Filipino</li><li>text: Mixed</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This Extension profile represents a tribe or band with which a person associates and, optionally, whether they are enrolled.\">US Core Tribal Affiliation Extension:</td><td colspan=\"3\"><ul><li>tribalAffiliation: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS 187}\">Shoshone</span></li><li>isEnrolled: false</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This extension represents an individual's sense of being a man, woman, boy, girl, nonbinary, or something else, ascertained by asking them what that identity is. Systems requiring multiple gender identities and associated dates **SHOULD** use the FHIR R5 [genderIdentity extension](http://hl7.org/fhir/extensions/StructureDefinition-individual-genderIdentity.html). When future versions of US Core are based on FHIR R5, the FHIR R5 extension will supersede this extension.\"><a href=\"StructureDefinition-us-core-genderIdentity.html\">US Core Gender Identity Extension:</a></td><td colspan=\"3\"><ul><li><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/v3-NullFlavor UNK}\">Unknown</span></li></ul></td></tr></table></div>"
+        },
+        "extension" : [{
+          "extension" : [{
+            "url" : "ombCategory",
+            "valueCoding" : {
+              "system" : "urn:oid:2.16.840.1.113883.6.238",
+              "code" : "2106-3",
+              "display" : "White"
+            }
+          },
+          {
+            "url" : "ombCategory",
+            "valueCoding" : {
+              "system" : "urn:oid:2.16.840.1.113883.6.238",
+              "code" : "1002-5",
+              "display" : "American Indian or Alaska Native"
+            }
+          },
+          {
+            "url" : "ombCategory",
+            "valueCoding" : {
+              "system" : "urn:oid:2.16.840.1.113883.6.238",
+              "code" : "2028-9",
+              "display" : "Asian"
+            }
+          },
+          {
+            "url" : "detailed",
+            "valueCoding" : {
+              "system" : "urn:oid:2.16.840.1.113883.6.238",
+              "code" : "1586-7",
+              "display" : "Shoshone"
+            }
+          },
+          {
+            "url" : "detailed",
+            "valueCoding" : {
+              "system" : "urn:oid:2.16.840.1.113883.6.238",
+              "code" : "2036-2",
+              "display" : "Filipino"
+            }
+          },
+          {
+            "url" : "text",
+            "valueString" : "Mixed"
+          }],
+          "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-race"
+        },
+        {
+          "extension" : [{
+            "url" : "ombCategory",
+            "valueCoding" : {
+              "system" : "urn:oid:2.16.840.1.113883.6.238",
+              "code" : "2135-2",
+              "display" : "Hispanic or Latino"
+            }
+          },
+          {
+            "url" : "detailed",
+            "valueCoding" : {
+              "system" : "urn:oid:2.16.840.1.113883.6.238",
+              "code" : "2184-0",
+              "display" : "Dominican"
+            }
+          },
+          {
+            "url" : "detailed",
+            "valueCoding" : {
+              "system" : "urn:oid:2.16.840.1.113883.6.238",
+              "code" : "2148-5",
+              "display" : "Mexican"
+            }
+          },
+          {
+            "url" : "text",
+            "valueString" : "Hispanic or Latino"
+          }],
+          "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-ethnicity"
+        },
+        {
+          "extension" : [{
+            "url" : "tribalAffiliation",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "http://terminology.hl7.org/CodeSystem/v3-TribalEntityUS",
+                "code" : "187",
+                "display" : "Paiute-Shoshone Tribe of the Fallon Reservation and Colony, Nevada"
+              }],
+              "text" : "Shoshone"
+            }
+          },
+          {
+            "url" : "isEnrolled",
+            "valueBoolean" : false
+          }],
+          "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-tribal-affiliation"
+        },
+        {
+          "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+          "valueCode" : "F"
+        },
+        {
+          "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-sex",
+          "valueCode" : "248152002"
+        },
+        {
+          "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-genderIdentity",
+          "valueCodeableConcept" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+              "code" : "UNK",
+              "display" : "Unknown"
+            }],
+            "text" : "Unknown"
+          }
+        }],
+        "identifier" : [{
+          "use" : "usual",
+          "type" : {
+            "coding" : [{
+              "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+              "code" : "MR",
+              "display" : "Medical Record Number"
+            }],
+            "text" : "Medical Record Number"
+          },
+          "system" : "http://hospital.smarthealthit.org",
+          "value" : "1032702"
+        }],
+        "active" : true,
+        "name" : [{
+          "use" : "old",
+          "family" : "Shaw",
+          "given" : ["Amy",
+          "V."],
+          "period" : {
+            "start" : "2016-12-06",
+            "end" : "2020-07-22"
+          }
+        },
+        {
+          "family" : "Baxter",
+          "given" : ["Amy", "V."],
+          "suffix" : ["PharmD"],
+          "period" : {
+            "start" : "2020-07-22"
+          }
+        }],
+        "telecom" : [{
+          "system" : "phone",
+          "value" : "555-555-5555",
+          "use" : "home"
+        },
+        {
+          "system" : "email",
+          "value" : "amy.shaw@example.com"
+        }],
+        "gender" : "female",
+        "birthDate" : "1987-02-20",
+        "address" : [{
+          "use" : "old",
+          "line" : ["49 MEADOW ST"],
+          "city" : "MOUNDS",
+          "state" : "OK",
+          "postalCode" : "74047",
+          "country" : "US",
+          "period" : {
+            "start" : "2016-12-06",
+            "end" : "2020-07-22"
+          }
+        },
+        {
+          "line" : ["183 MOUNTAIN VIEW ST"],
+          "city" : "MOUNDS",
+          "state" : "OK",
+          "postalCode" : "74048",
+          "country" : "US",
+          "period" : {
+            "start" : "2020-07-22"
+          }
+        }]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Patient"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:836df97f-c60d-49c6-a038-bacf821560ef",
+      "resource": {
+        "resourceType" : "Practitioner",
+        "id" : "836df97f-c60d-49c6-a038-bacf821560ef",
+        "meta" : {
+          "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|7.0.0"]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Practitioner</b><a name=\"practitioner-1\"> </a><a name=\"hcpractitioner-1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Practitioner &quot;practitioner-1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-practitioner.html\">US Core Practitioner Profile (version 7.0.0)</a></p></div><p><b>identifier</b>: <a href=\"http://terminology.hl7.org/5.3.0/NamingSystem-npi.html\" title=\"National Provider Identifier\">United States National Provider Identifier</a>/9941339100, <code>http://www.acme.org/practitioners</code>/25456</p><p><b>name</b>: Ronald Bone </p><p><b>address</b>: 1003 HEALTHCARE DR AMHERST MA 01002 (work)</p></div>"
+        },
+        "identifier" : [{
+          "system" : "http://hl7.org/fhir/sid/us-npi",
+          "value" : "9941339100"
+        },
+        {
+          "extension" : [{
+            "url" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-jurisdiction",
+            "valueCodeableConcept" : {
+              "coding" : [{
+                "system" : "https://www.usps.com/",
+                "code" : "MA"
+              }],
+              "text" : "Massachusetts"
+            }
+          }],
+          "system" : "http://www.acme.org/practitioners",
+          "value" : "25456"
+        }],
+        "name" : [{
+          "family" : "Bone",
+          "given" : ["Ronald"],
+          "prefix" : ["Dr"]
+        }],
+        "address" : [{
+          "use" : "work",
+          "line" : ["1003 HEALTHCARE DR"],
+          "city" : "AMHERST",
+          "state" : "MA",
+          "postalCode" : "01002"
+        }]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Practitioner"
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:phq-9-example",
+      "resource": {
+        "resourceType" : "QuestionnaireResponse",
+        "id" : "phq-9-example",
+        "meta" : {
+          "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|7.0.0"]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"1\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The linkId for the item\">LinkId</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Text for the item\">Text</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Minimum and Maximum # of times the the itemcan appear in the instance\">Definition</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"The type of the item\">Answer</a><span style=\"float: right\"><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_q_root.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"QuestionnaireResponseRoot\" class=\"hierarchy\"/> phq-9-example</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Questionnaire:<a href=\"Questionnaire-phq-9-example.html\">PHQ-9 Example</a></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44250-9</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Little interest or pleasure in doing things?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6570-1\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6570-1: More than half the days</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44255-8</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling down, depressed, or hopeless?</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6570-1\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6570-1: More than half the days</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44259-0</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Trouble falling or staying asleep, or sleeping too much</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6570-1\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6570-1: More than half the days</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44254-1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling tired or having little energy</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6570-1\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6570-1: More than half the days</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44251-7</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Poor appetite or overeating</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6569-3\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6569-3: Several days</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44258-2</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Feeling bad about yourself-or that you are a failure or have let yourself or your family down</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6569-3\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6569-3: Several days</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44252-5</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Trouble concentrating on things, such as reading the newspaper or watching television</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6570-1\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6570-1: More than half the days</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44253-3</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Moving or speaking so slowly that other people could have noticed. Or the opposite-being so fidgety or restless that you have been moving around a lot more than usual</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6568-5\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6568-5: Not at all</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44260-8</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Thoughts that you would be better off dead, or of hurting yourself in some way</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6568-5\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6568-5: Not at all</span></span></td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /44261-6</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Patient health questionnaire 9 item total score</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">12</td></tr>\r\n<tr style=\"border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon-q-string.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Item\" class=\"hierarchy\"/> /69722-7</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span><span><a href=\"https://loinc.org/LA6573-5\">Logical Observation Identifiers, Names and Codes (LOINC)</a> LA6573-5: Somewhat difficult</span></span></td></tr>\r\n<tr><td colspan=\"4\" class=\"hierarchy\"><br/><a href=\"http://hl7.org/fhir/R4/formats.html#table\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+        },
+        "questionnaire" : "http://hl7.org/fhir/us/core/Questionnaire/phq-9-example",
+        "status" : "completed",
+        "subject" : {
+          "reference" : "urn:uuid:07e2c163-71f6-46f1-99d5-d43c1a002cf2"
+        },
+        "authored" : "2022-11-29T20:50:32.718Z",
+        "author" : {
+          "reference" : "urn:uuid:836df97f-c60d-49c6-a038-bacf821560ef"
+        },
+        "item" : [{
+          "linkId" : "/44250-9",
+          "text" : "Little interest or pleasure in doing things?",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6570-1",
+              "display" : "More than half the days"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44255-8",
+          "text" : "Feeling down, depressed, or hopeless?",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6570-1",
+              "display" : "More than half the days"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44259-0",
+          "text" : "Trouble falling or staying asleep, or sleeping too much",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6570-1",
+              "display" : "More than half the days"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44254-1",
+          "text" : "Feeling tired or having little energy",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6570-1",
+              "display" : "More than half the days"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44251-7",
+          "text" : "Poor appetite or overeating",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6569-3",
+              "display" : "Several days"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44258-2",
+          "text" : "Feeling bad about yourself-or that you are a failure or have let yourself or your family down",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6569-3",
+              "display" : "Several days"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44252-5",
+          "text" : "Trouble concentrating on things, such as reading the newspaper or watching television",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6570-1",
+              "display" : "More than half the days"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44253-3",
+          "text" : "Moving or speaking so slowly that other people could have noticed. Or the opposite-being so fidgety or restless that you have been moving around a lot more than usual",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6568-5",
+              "display" : "Not at all"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44260-8",
+          "text" : "Thoughts that you would be better off dead, or of hurting yourself in some way",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6568-5",
+              "display" : "Not at all"
+            }
+          }]
+        },
+        {
+          "linkId" : "/44261-6",
+          "text" : "Patient health questionnaire 9 item total score",
+          "answer" : [{
+            "valueDecimal" : 12
+          }]
+        },
+        {
+          "linkId" : "/69722-7",
+          "text" : "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+          "answer" : [{
+            "valueCoding" : {
+              "system" : "http://loinc.org",
+              "code" : "LA6573-5",
+              "display" : "Somewhat difficult"
+            }
+          }]
+        }]
+      },
+      "request": {
+        "method": "POST",
+        "url": "QuestionnaireResponse"
+      }
+    },
+    {
+      "fullUrl":"urn:uuid:PHQ9-item-example-44261-6",
+      "resource": {
+        "resourceType" : "Observation",
+        "id" : "PHQ9-item-example-44261-6",
+        "meta" : {
+          "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-screening-assessment|7.0.0"]
+        },
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"PHQ9-item-example-44261-6\"> </a><a name=\"hcPHQ9-item-example-44261-6\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;PHQ9-item-example-44261-6&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-us-core-observation-screening-assessment.html\">US Core Observation Screening Assessment Profile (version 7.0.0)</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span>, Disability Status <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-us-core-category.html\">US Core Category</a>#disability-status)</span></p><p><b>code</b>: Patient Health Questionnaire 9 item (PHQ-9) total score [Reported] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#44261-6)</span></p><p><b>subject</b>: <a href=\"Patient-example.html\">Patient/example</a> &quot; SHAW&quot;</p><p><b>effective</b>: 2022-11-29 20:50:32+0000</p><p><b>performer</b>: <a href=\"Practitioner-practitioner-1.html\">Practitioner/practitioner-1</a> &quot; BONE&quot;</p><p><b>value</b>: 12</p><p><b>derivedFrom</b>: <a href=\"QuestionnaireResponse-phq-9-example.html\">QuestionnaireResponse/phq-9-example</a></p></div>"
+        },
+        "status" : "final",
+        "category" : [{
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+            "code" : "survey",
+            "display" : "Survey"
+          }]
+        },
+        {
+          "coding" : [{
+            "system" : "http://hl7.org/fhir/us/core/CodeSystem/us-core-category",
+            "code" : "disability-status",
+            "display" : "Disability Status"
+          }]
+        }],
+        "code" : {
+          "coding" : [{
+            "system" : "http://loinc.org",
+            "code" : "44261-6",
+            "display" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+          }],
+          "text" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
+        },
+        "subject" : {
+          "reference" : "urn:uuid:07e2c163-71f6-46f1-99d5-d43c1a002cf2"
+        },
+        "effectiveDateTime" : "2022-11-29T20:50:32.718000+00:00",
+        "performer" : [{
+          "reference" : "urn:uuid:836df97f-c60d-49c6-a038-bacf821560ef"
+        }],
+        "valueString" : "12",
+        "derivedFrom" : [{
+          "reference" : "urn:uuid:phq-9-example"
+        }]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+  ]
+}
