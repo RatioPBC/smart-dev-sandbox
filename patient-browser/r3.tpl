@@ -1,7 +1,7 @@
 {
     server: {
         type: 'STU-3',
-        url: 'http://$HOST:$R3_PORT/hapi-fhir-jpaserver/fhir',
+        url: 'http://$HOST:$R3_PORT/fhir',
         tags: [
             {
                 key: 'smart-7-2017',

@@ -1,7 +1,7 @@
 This folder is for sample patient bundle data that can be imported using the [`smart-on-fhir/tag-uploader`](https://github.com/smart-on-fhir/tag-uploader) library.
 
 ```bash
-node ./node_modules/tag-uploader -d ./hapi/R4/CUSTOM -S http://localhost:4004/hapi-fhir-jpaserver/fhir/
+node ./node_modules/tag-uploader -d ./hapi/R4/CUSTOM -S http://localhost:4004/fhir/
 ```
 
 Or

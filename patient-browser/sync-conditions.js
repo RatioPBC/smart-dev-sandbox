@@ -13,7 +13,7 @@ const HOST = process.env.HOST || "localhost";
 
 [2, 3, 4].forEach(v => {
     CFG[`r${v}`] = {
-        server: `http://${HOST}:${process.env[`R${v}_PORT`]}/hapi-fhir-jpaserver/fhir`,
+        server: `http://${HOST}:${process.env[`R${v}_PORT`]}/fhir`,
         pickerConfigFile: [`./r${v}.tpl`]
     };
 });

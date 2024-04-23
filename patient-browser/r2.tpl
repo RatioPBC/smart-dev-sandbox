@@ -1,7 +1,7 @@
 {
     server: {
         type: 'DSTU-2',
-        url: 'http://$HOST:$R2_PORT/hapi-fhir-jpaserver/fhir',
+        url: 'http://$HOST:$R2_PORT/fhir',
         tags: [
             {
                 key: 'smart-8-2017',
