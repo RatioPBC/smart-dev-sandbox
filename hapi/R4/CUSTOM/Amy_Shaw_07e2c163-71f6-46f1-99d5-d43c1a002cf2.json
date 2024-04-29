@@ -443,6 +443,56 @@
         "method": "POST",
         "url": "Observation"
       }
+    },
+    {
+      "fullUrl": "urn:uuid:edd8095c-efb4-4fd7-b5b5-5bb709af6969",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "edd8095c-efb4-4fd7-b5b5-5bb709af6969",
+        "status": "in-progress",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB"
+        },
+        "type": [
+          {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "185349003",
+                "display": "Encounter for check up (procedure)"
+              }
+            ],
+            "text": "Encounter for check up (procedure)"
+          }
+        ],
+        "subject": {
+          "reference": "urn:uuid:07e2c163-71f6-46f1-99d5-d43c1a002cf2"
+        },
+        "participant": [
+          {
+            "individual": {
+              "reference": "urn:uuid:836df97f-c60d-49c6-a038-bacf821560ef"
+            }
+          }
+        ],
+        "period": {
+          "start": "2024-04-07T23:37:54+00:00",
+          "end": "2024-04-07T23:52:54+00:00"
+        },
+        "meta": {
+            "tag": [
+                {
+                    "system": "https://smarthealthit.org/tags",
+                    "code": "synthea-5-2019"
+                }
+            ]
+        }
+      },
+      "request": {
+        "method": "POST",
+        "url": "Encounter"
+      }
     }
   ]
 }
