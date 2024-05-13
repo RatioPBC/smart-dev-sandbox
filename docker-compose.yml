@@ -42,12 +42,12 @@ services:
       PORT: $R4_PORT
       HOST: "${HOST}"
       hapi.fhir.fhir_version: R4
-      hapi.fhir.server_address: "http://${HOST}:${R4_PORT}/fhir"
-      hapi.fhir.tester.home.server_address: "http://${HOST}:${R4_PORT}/fhir"
+      # hapi.fhir.server_address: "http://${HOST}:${R4_PORT}/fhir/"
+      # hapi.fhir.tester.home.server_address: "http://${HOST}:${R4_PORT}/fhir/"
       spring.datasource.url: jdbc:h2:file:./target/database/h2
-      server.port: $R4_PORT
+      # server.port: $R4_PORT
     ports:
-      - $R4_PORT:$R4_PORT
+      - $R4_PORT:8080
     cpu_count: $R4_CPU_CORES
     mem_limit: $R4_MEMORY
     scale: $R4_ENABLED
@@ -110,14 +110,14 @@ services:
     environment:
       # HOST                   : "${HOST}"
       NODE_ENV               : "production"
-      # LAUNCHER_BASE_URL      : "http://${HOST}:${LAUNCHER_PORT}"
-      # BASE_URL               : "http://${HOST}:${LAUNCHER_PORT}"
-      FHIR_SERVER_R2         : "http://${HOST}:${R2_PORT}/fhir"
-      FHIR_SERVER_R3         : "http://${HOST}:${R3_PORT}/fhir"
-      FHIR_SERVER_R4         : "http://${HOST}:${R4_PORT}/fhir"
-      # FHIR_SERVER_R2_INTERNAL: "http://r2:8080/fhir"
-      # FHIR_SERVER_R3_INTERNAL: "http://r3:8080/fhir"
-      # FHIR_SERVER_R4_INTERNAL: "http://r4:8080/fhir"
+      LAUNCHER_BASE_URL      : "http://${HOST}:${LAUNCHER_PORT}"
+      BASE_URL               : "http://${HOST}:${LAUNCHER_PORT}"
+      FHIR_SERVER_R2         : "http://${HOST}:${R2_PORT}/fhir/"
+      FHIR_SERVER_R3         : "http://${HOST}:${R3_PORT}/fhir/"
+      FHIR_SERVER_R4         : "http://${HOST}:${R4_PORT}/fhir/"
+      FHIR_SERVER_R2_INTERNAL: "http://r2:8080/fhir/"
+      FHIR_SERVER_R3_INTERNAL: "http://r3:8080/fhir/"
+      FHIR_SERVER_R4_INTERNAL: "http://r4:8080/fhir/"
       # DISABLE_SANDBOXES      : "1"
       # CDS_SANDBOX_URL        : "https://sandbox.cds-hooks.org"
       PICKER_CONFIG_R2       : "r2-local"
