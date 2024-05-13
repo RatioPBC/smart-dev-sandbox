@@ -106,7 +106,7 @@ services:
 
   smart-launcher: # ------------------------------------------------------------
     container_name: launcher
-    image: smartonfhir/smart-launcher-2:latest
+    build: https://github.com/romancow/smart-launcher-v2.git
     environment:
       # HOST                   : "${HOST}"
       NODE_ENV               : "production"
