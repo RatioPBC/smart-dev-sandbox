@@ -1,0 +1,184 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:3a74397d-e9b8-4eea-9920-098723aad52d",
+            "resource": {
+                "resourceType": "Patient",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"
+                    ]
+                },
+                "name": [
+                    {
+                        "family": "Doe",
+                        "given": [
+                            "Jane"
+                        ]
+                    }
+                ],
+                "birthDate": "1971-02-03",
+                "gender": "female",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "1234 Main St."
+                        ],
+                        "city": "Denver",
+                        "state": "CO",
+                        "postalCode": "80014"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:5c907818-015c-457e-bff1-4c7a62d21d6d",
+            "resource": {
+                "resourceType": "Questionnaire",
+                "id": "demographics",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+                    ]
+                },
+                "contained": [
+                    {
+                        "resourceType": "ValueSet",
+                        "id": "county_valueset",
+                        "url": "https://cdphe.colorado.gov/county_valueset.html",
+                        "name": "Counties",
+                        "title": "Counties",
+                        "status": "active",
+                        "description": "The list of counties in the state of Colorado",
+                        "compose": {
+                            "include": [
+                                {
+                                    "system": "https://cdphe.colorado.gov/county_codes.html",
+                                    "concept": [
+                                        {
+                                            "code": "001",
+                                            "display": "Adams County"
+                                        },
+                                        {
+                                            "code": "002",
+                                            "display": "Alamosa County"
+                                        },
+                                        {
+                                            "code": "003",
+                                            "display": "Arapahoe County"
+                                        },
+                                        {
+                                            "code": "004",
+                                            "display": "Archuleta County"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    }
+                ],
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "url": "name",
+                                "valueId": "subject"
+                            },
+                            {
+                                "url": "type",
+                                "valueCode": "Patient"
+                            },
+                            {
+                                "url": "descripton",
+                                "valueString": "For filling in patient information as the subject for the form"
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+                    }
+                ],
+                "url": "http://hl7.org/fhir/uv/sdc/Questionnaire/demographics",
+                "version": "3.0.0",
+                "name": "DemographicExample",
+                "title": "Questionnaire - Demographics Example",
+                "status": "active",
+                "subjectType": [
+                    "Patient"
+                ],
+                "date": "2023-12-07T23:07:45+00:00",
+                "publisher": "Colorado BHA",
+                "description": "A sample questionnaire for collecting patient demographics",
+                "item": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%subject.name.given"
+                                }
+                            }
+                        ],
+                        "linkId": "patient.name.given",
+                        "definition": "Patient.name.given",
+                        "text": "First Name",
+                        "type": "string",
+                        "required": true
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%subject.name.family"
+                                }
+                            }
+                        ],
+                        "linkId": "patient.name.family",
+                        "definition": "Patient.name.family",
+                        "text": "Last Name",
+                        "type": "string",
+                        "required": true,
+                        "readOnly": true
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%subject.birthDate"
+                                }
+                            }
+                        ],
+                        "linkId": "patient.birthDate",
+                        "definition": "Patient.birthDate",
+                        "text": "Date of birth",
+                        "type": "date",
+                        "required": true,
+                        "readOnly": true
+                    },
+                    {
+                        "linkId": "patient.county",
+                        "definition": "Patient.address.county",
+                        "text": "County",
+                        "type": "choice",
+                        "required": true,
+                        "answerValueSet": "#county_valueset"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Questionnaire"
+            }
+        }
+    ]
+}
