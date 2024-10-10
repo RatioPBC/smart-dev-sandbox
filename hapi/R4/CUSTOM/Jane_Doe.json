@@ -1,0 +1,439 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+        {
+            "fullUrl": "urn:uuid:69b3b293-17df-4932-8a6a-d2dd5b79cd81",
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "colorado_counties",
+                "url": "https://dola.colorado.gov/lgis/counties.jsf",
+                "name": "Colorado Counties",
+                "title": "Colorado Counties",
+                "status": "active",
+                "description": "The list of counties in the state of Colorado",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "https://dola.colorado.gov/lgis/counties.jsf",
+                            "concept": [
+                                {
+                                    "display": "Adams",
+                                    "code": "01001"
+                                },
+                                {
+                                    "display": "Alamosa",
+                                    "code": "02001"
+                                },
+                                {
+                                    "display": "Arapahoe",
+                                    "code": "03001"
+                                },
+                                {
+                                    "display": "Archuleta",
+                                    "code": "04001"
+                                },
+                                {
+                                    "display": "Baca",
+                                    "code": "05001"
+                                },
+                                {
+                                    "display": "Bent",
+                                    "code": "06001"
+                                },
+                                {
+                                    "display": "Boulder",
+                                    "code": "07003"
+                                },
+                                {
+                                    "display": "Broomfield",
+                                    "code": "064030"
+                                },
+                                {
+                                    "display": "Chaffee",
+                                    "code": "08003"
+                                },
+                                {
+                                    "display": "Cheyenne",
+                                    "code": "09002"
+                                },
+                                {
+                                    "display": "Clear Creek",
+                                    "code": "10003"
+                                },
+                                {
+                                    "display": "Conejos",
+                                    "code": "11004"
+                                },
+                                {
+                                    "display": "Costilla",
+                                    "code": "12003"
+                                },
+                                {
+                                    "display": "Crowley",
+                                    "code": "13001"
+                                },
+                                {
+                                    "display": "Custer",
+                                    "code": "14001"
+                                },
+                                {
+                                    "display": "Delta",
+                                    "code": "15006"
+                                },
+                                {
+                                    "display": "Denver",
+                                    "code": "16002"
+                                },
+                                {
+                                    "display": "Dolores",
+                                    "code": "17002"
+                                },
+                                {
+                                    "display": "Douglas",
+                                    "code": "18008"
+                                },
+                                {
+                                    "display": "Eagle",
+                                    "code": "19011"
+                                },
+                                {
+                                    "display": "El Paso",
+                                    "code": "21019"
+                                },
+                                {
+                                    "display": "Elbert",
+                                    "code": "20001"
+                                },
+                                {
+                                    "display": "Fremont",
+                                    "code": "22013"
+                                },
+                                {
+                                    "display": "Garfield",
+                                    "code": "23005"
+                                },
+                                {
+                                    "display": "Gilpin",
+                                    "code": "24005"
+                                },
+                                {
+                                    "display": "Grand",
+                                    "code": "25009"
+                                },
+                                {
+                                    "display": "Gunnison",
+                                    "code": "26006"
+                                },
+                                {
+                                    "display": "Hinsdale",
+                                    "code": "27001"
+                                },
+                                {
+                                    "display": "Huerfano",
+                                    "code": "28002"
+                                },
+                                {
+                                    "display": "Jackson",
+                                    "code": "29001"
+                                },
+                                {
+                                    "display": "Jefferson",
+                                    "code": "30047"
+                                },
+                                {
+                                    "display": "Kiowa",
+                                    "code": "31004"
+                                },
+                                {
+                                    "display": "Kit Carson",
+                                    "code": "32011"
+                                },
+                                {
+                                    "display": "La Plata",
+                                    "code": "34017"
+                                },
+                                {
+                                    "display": "Lake",
+                                    "code": "33001"
+                                },
+                                {
+                                    "display": "Larimer",
+                                    "code": "35015"
+                                },
+                                {
+                                    "display": "Las Animas",
+                                    "code": "36006"
+                                },
+                                {
+                                    "display": "Lincoln",
+                                    "code": "37008"
+                                },
+                                {
+                                    "display": "Logan",
+                                    "code": "38008"
+                                },
+                                {
+                                    "display": "Mesa",
+                                    "code": "39023"
+                                },
+                                {
+                                    "display": "Mineral",
+                                    "code": "40002"
+                                },
+                                {
+                                    "display": "Moffat",
+                                    "code": "41007"
+                                },
+                                {
+                                    "display": "Montezuma",
+                                    "code": "42017"
+                                },
+                                {
+                                    "display": "Montrose",
+                                    "code": "43001"
+                                },
+                                {
+                                    "display": "Morgan",
+                                    "code": "44010"
+                                },
+                                {
+                                    "display": "Otero",
+                                    "code": "45012"
+                                },
+                                {
+                                    "display": "Ouray",
+                                    "code": "46005"
+                                },
+                                {
+                                    "display": "Park",
+                                    "code": "47012"
+                                },
+                                {
+                                    "display": "Phillips",
+                                    "code": "48007"
+                                },
+                                {
+                                    "display": "Pitkin",
+                                    "code": "49010"
+                                },
+                                {
+                                    "display": "Prowers",
+                                    "code": "50014"
+                                },
+                                {
+                                    "display": "Pueblo",
+                                    "code": "51010"
+                                },
+                                {
+                                    "display": "Rio Blanco",
+                                    "code": "52016"
+                                },
+                                {
+                                    "display": "Rio Grande",
+                                    "code": "53006"
+                                },
+                                {
+                                    "display": "Routt",
+                                    "code": "54012"
+                                },
+                                {
+                                    "display": "Saguache",
+                                    "code": "55007"
+                                },
+                                {
+                                    "display": "San Juan",
+                                    "code": "56001"
+                                },
+                                {
+                                    "display": "San Miguel",
+                                    "code": "57010"
+                                },
+                                {
+                                    "display": "Sedgwick",
+                                    "code": "58009"
+                                },
+                                {
+                                    "display": "Summit",
+                                    "code": "59021"
+                                },
+                                {
+                                    "display": "Teller",
+                                    "code": "60010"
+                                },
+                                {
+                                    "display": "Washington",
+                                    "code": "61008"
+                                },
+                                {
+                                    "display": "Weld",
+                                    "code": "62056"
+                                },
+                                {
+                                    "display": "Yuma",
+                                    "code": "63012"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "ValueSet"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:3a74397d-e9b8-4eea-9920-098723aad52d",
+            "resource": {
+                "resourceType": "Patient",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|7.0.0"
+                    ]
+                },
+                "name": [
+                    {
+                        "family": "Doe",
+                        "given": [
+                            "Jane"
+                        ]
+                    }
+                ],
+                "birthDate": "1971-02-03",
+                "gender": "female",
+                "address": [
+                    {
+                        "use": "home",
+                        "line": [
+                            "1234 Main St."
+                        ],
+                        "city": "Denver",
+                        "state": "CO",
+                        "postalCode": "80014",
+                        "district": "16002"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Patient"
+            }
+        },
+        {
+            "fullUrl": "urn:uuid:5c907818-015c-457e-bff1-4c7a62d21d6d",
+            "resource": {
+                "resourceType": "Questionnaire",
+                "id": "demographics",
+                "meta": {
+                    "profile": [
+                        "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
+                    ]
+                },
+                "extension": [
+                    {
+                        "extension": [
+                            {
+                                "url": "name",
+                                "valueId": "subject"
+                            },
+                            {
+                                "url": "type",
+                                "valueCode": "Patient"
+                            },
+                            {
+                                "url": "descripton",
+                                "valueString": "For filling in patient information as the subject for the form"
+                            }
+                        ],
+                        "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext"
+                    }
+                ],
+                "url": "http://hl7.org/fhir/uv/sdc/Questionnaire/demographics",
+                "version": "3.0.0",
+                "name": "DemographicExample",
+                "title": "Questionnaire - Demographics Example",
+                "status": "active",
+                "subjectType": [
+                    "Patient"
+                ],
+                "date": "2023-12-07T23:07:45+00:00",
+                "publisher": "Colorado BHA",
+                "description": "A sample questionnaire for collecting patient demographics",
+                "item": [
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%subject.name.given"
+                                }
+                            }
+                        ],
+                        "linkId": "patient.name.given",
+                        "definition": "Patient.name.given",
+                        "text": "First Name",
+                        "type": "string",
+                        "required": true
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%subject.name.family"
+                                }
+                            }
+                        ],
+                        "linkId": "patient.name.family",
+                        "definition": "Patient.name.family",
+                        "text": "Last Name",
+                        "type": "string",
+                        "required": true,
+                        "readOnly": true
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%subject.birthDate"
+                                }
+                            }
+                        ],
+                        "linkId": "patient.birthDate",
+                        "definition": "Patient.birthDate",
+                        "text": "Date of birth",
+                        "type": "date",
+                        "required": true,
+                        "readOnly": true
+                    },
+                    {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%subject.address.district"
+                                }
+                            }
+                        ],
+                        "linkId": "patient.county",
+                        "definition": "Patient.address.county",
+                        "text": "County",
+                        "type": "choice",
+                        "required": true,
+                        "answerValueSet": "https://dola.colorado.gov/lgis/counties.jsf"
+                    }
+                ]
+            },
+            "request": {
+                "method": "POST",
+                "url": "Questionnaire"
+            }
+        }
+    ]
+}
