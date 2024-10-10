@@ -425,7 +425,8 @@
                         "definition": "Patient.address.county",
                         "text": "County",
                         "type": "choice",
-                        "required": true
+                        "required": true,
+                        "answerValueSet": "https://dola.colorado.gov/lgis/counties.jsf"
                     }
                 ]
             },
