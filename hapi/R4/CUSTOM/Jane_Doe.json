@@ -6,7 +6,7 @@
             "fullUrl": "urn:uuid:69b3b293-17df-4932-8a6a-d2dd5b79cd81",
             "resource": {
                 "resourceType": "ValueSet",
-                "id": "county_valueset",
+                "id": "colorado_counties",
                 "url": "https://dola.colorado.gov/lgis/counties.jsf",
                 "name": "Colorado Counties",
                 "title": "Colorado Counties",
