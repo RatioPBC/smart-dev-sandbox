@@ -3,6 +3,287 @@
     "type": "transaction",
     "entry": [
         {
+            "fullUrl": "urn:uuid:69b3b293-17df-4932-8a6a-d2dd5b79cd81",
+            "resource": {
+                "resourceType": "ValueSet",
+                "id": "county_valueset",
+                "url": "https://dola.colorado.gov/lgis/counties.jsf",
+                "name": "Colorado Counties",
+                "title": "Colorado Counties",
+                "status": "active",
+                "description": "The list of counties in the state of Colorado",
+                "compose": {
+                    "include": [
+                        {
+                            "system": "https://dola.colorado.gov/lgis/counties.jsf",
+                            "concept": [
+                                {
+                                    "display": "Adams",
+                                    "code": "01001"
+                                },
+                                {
+                                    "display": "Alamosa",
+                                    "code": "02001"
+                                },
+                                {
+                                    "display": "Arapahoe",
+                                    "code": "03001"
+                                },
+                                {
+                                    "display": "Archuleta",
+                                    "code": "04001"
+                                },
+                                {
+                                    "display": "Baca",
+                                    "code": "05001"
+                                },
+                                {
+                                    "display": "Bent",
+                                    "code": "06001"
+                                },
+                                {
+                                    "display": "Boulder",
+                                    "code": "07003"
+                                },
+                                {
+                                    "display": "Broomfield",
+                                    "code": "064030"
+                                },
+                                {
+                                    "display": "Chaffee",
+                                    "code": "08003"
+                                },
+                                {
+                                    "display": "Cheyenne",
+                                    "code": "09002"
+                                },
+                                {
+                                    "display": "Clear Creek",
+                                    "code": "10003"
+                                },
+                                {
+                                    "display": "Conejos",
+                                    "code": "11004"
+                                },
+                                {
+                                    "display": "Costilla",
+                                    "code": "12003"
+                                },
+                                {
+                                    "display": "Crowley",
+                                    "code": "13001"
+                                },
+                                {
+                                    "display": "Custer",
+                                    "code": "14001"
+                                },
+                                {
+                                    "display": "Delta",
+                                    "code": "15006"
+                                },
+                                {
+                                    "display": "Denver",
+                                    "code": "16002"
+                                },
+                                {
+                                    "display": "Dolores",
+                                    "code": "17002"
+                                },
+                                {
+                                    "display": "Douglas",
+                                    "code": "18008"
+                                },
+                                {
+                                    "display": "Eagle",
+                                    "code": "19011"
+                                },
+                                {
+                                    "display": "El Paso",
+                                    "code": "21019"
+                                },
+                                {
+                                    "display": "Elbert",
+                                    "code": "20001"
+                                },
+                                {
+                                    "display": "Fremont",
+                                    "code": "22013"
+                                },
+                                {
+                                    "display": "Garfield",
+                                    "code": "23005"
+                                },
+                                {
+                                    "display": "Gilpin",
+                                    "code": "24005"
+                                },
+                                {
+                                    "display": "Grand",
+                                    "code": "25009"
+                                },
+                                {
+                                    "display": "Gunnison",
+                                    "code": "26006"
+                                },
+                                {
+                                    "display": "Hinsdale",
+                                    "code": "27001"
+                                },
+                                {
+                                    "display": "Huerfano",
+                                    "code": "28002"
+                                },
+                                {
+                                    "display": "Jackson",
+                                    "code": "29001"
+                                },
+                                {
+                                    "display": "Jefferson",
+                                    "code": "30047"
+                                },
+                                {
+                                    "display": "Kiowa",
+                                    "code": "31004"
+                                },
+                                {
+                                    "display": "Kit Carson",
+                                    "code": "32011"
+                                },
+                                {
+                                    "display": "La Plata",
+                                    "code": "34017"
+                                },
+                                {
+                                    "display": "Lake",
+                                    "code": "33001"
+                                },
+                                {
+                                    "display": "Larimer",
+                                    "code": "35015"
+                                },
+                                {
+                                    "display": "Las Animas",
+                                    "code": "36006"
+                                },
+                                {
+                                    "display": "Lincoln",
+                                    "code": "37008"
+                                },
+                                {
+                                    "display": "Logan",
+                                    "code": "38008"
+                                },
+                                {
+                                    "display": "Mesa",
+                                    "code": "39023"
+                                },
+                                {
+                                    "display": "Mineral",
+                                    "code": "40002"
+                                },
+                                {
+                                    "display": "Moffat",
+                                    "code": "41007"
+                                },
+                                {
+                                    "display": "Montezuma",
+                                    "code": "42017"
+                                },
+                                {
+                                    "display": "Montrose",
+                                    "code": "43001"
+                                },
+                                {
+                                    "display": "Morgan",
+                                    "code": "44010"
+                                },
+                                {
+                                    "display": "Otero",
+                                    "code": "45012"
+                                },
+                                {
+                                    "display": "Ouray",
+                                    "code": "46005"
+                                },
+                                {
+                                    "display": "Park",
+                                    "code": "47012"
+                                },
+                                {
+                                    "display": "Phillips",
+                                    "code": "48007"
+                                },
+                                {
+                                    "display": "Pitkin",
+                                    "code": "49010"
+                                },
+                                {
+                                    "display": "Prowers",
+                                    "code": "50014"
+                                },
+                                {
+                                    "display": "Pueblo",
+                                    "code": "51010"
+                                },
+                                {
+                                    "display": "Rio Blanco",
+                                    "code": "52016"
+                                },
+                                {
+                                    "display": "Rio Grande",
+                                    "code": "53006"
+                                },
+                                {
+                                    "display": "Routt",
+                                    "code": "54012"
+                                },
+                                {
+                                    "display": "Saguache",
+                                    "code": "55007"
+                                },
+                                {
+                                    "display": "San Juan",
+                                    "code": "56001"
+                                },
+                                {
+                                    "display": "San Miguel",
+                                    "code": "57010"
+                                },
+                                {
+                                    "display": "Sedgwick",
+                                    "code": "58009"
+                                },
+                                {
+                                    "display": "Summit",
+                                    "code": "59021"
+                                },
+                                {
+                                    "display": "Teller",
+                                    "code": "60010"
+                                },
+                                {
+                                    "display": "Washington",
+                                    "code": "61008"
+                                },
+                                {
+                                    "display": "Weld",
+                                    "code": "62056"
+                                },
+                                {
+                                    "display": "Yuma",
+                                    "code": "63012"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "request": {
+                "method": "POST",
+                "url": "ValueSet"
+            }
+        },
+        {
             "fullUrl": "urn:uuid:3a74397d-e9b8-4eea-9920-098723aad52d",
             "resource": {
                 "resourceType": "Patient",
@@ -29,7 +310,8 @@
                         ],
                         "city": "Denver",
                         "state": "CO",
-                        "postalCode": "80014"
+                        "postalCode": "80014",
+                        "district": "16002"
                     }
                 ]
             },
@@ -48,42 +330,6 @@
                         "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire"
                     ]
                 },
-                "contained": [
-                    {
-                        "resourceType": "ValueSet",
-                        "id": "county_valueset",
-                        "url": "https://cdphe.colorado.gov/county_valueset.html",
-                        "name": "Counties",
-                        "title": "Counties",
-                        "status": "active",
-                        "description": "The list of counties in the state of Colorado",
-                        "compose": {
-                            "include": [
-                                {
-                                    "system": "https://cdphe.colorado.gov/county_codes.html",
-                                    "concept": [
-                                        {
-                                            "code": "001",
-                                            "display": "Adams County"
-                                        },
-                                        {
-                                            "code": "002",
-                                            "display": "Alamosa County"
-                                        },
-                                        {
-                                            "code": "003",
-                                            "display": "Arapahoe County"
-                                        },
-                                        {
-                                            "code": "004",
-                                            "display": "Archuleta County"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    }
-                ],
                 "extension": [
                     {
                         "extension": [
@@ -166,12 +412,20 @@
                         "readOnly": true
                     },
                     {
+                        "extension": [
+                            {
+                                "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                                "valueExpression": {
+                                    "language": "text/fhirpath",
+                                    "expression": "%subject.address.district"
+                                }
+                            }
+                        ],
                         "linkId": "patient.county",
                         "definition": "Patient.address.county",
                         "text": "County",
                         "type": "choice",
-                        "required": true,
-                        "answerValueSet": "#county_valueset"
+                        "required": true
                     }
                 ]
             },
